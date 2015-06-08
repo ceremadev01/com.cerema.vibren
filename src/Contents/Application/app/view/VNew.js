@@ -10,15 +10,17 @@ App.view.define('VNew',{
         this.items = [
 		{
 			xtype: "textfield",
-			fieldLabel: "Intitulé du projet",
+			fieldLabel: "Libellé",
 			labelAlign: "top",
+			itemId: "text_title",
 			width: "100%",
 			fieldPosition: "top",
 			padding: 10
 		},
 		{
 			xtype: "textarea",
-			fieldLabel: "Commentaires",
+			fieldLabel: "Description",
+			itemId: "text_description",
 			labelAlign: "top",
 			width: "100%",
 			fieldPosition: "top",
