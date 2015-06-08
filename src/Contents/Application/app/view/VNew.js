@@ -30,7 +30,8 @@ App.view.define('VNew',{
 			width: "100%",
 			items: [
 				{
-					flex: 1
+					flex: 1,
+					border: false
 				},
 				{
 					xtype: "button",
