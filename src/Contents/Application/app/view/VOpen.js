@@ -26,7 +26,8 @@ App.view.define('VOpen',{
 				},
 				{
 					text: "Description",
-					dataIndex: "description"
+					dataIndex: "description",
+					flex: 1
 				}
 			],
 			store: App.store.create("App.Etudes.getAll",{
