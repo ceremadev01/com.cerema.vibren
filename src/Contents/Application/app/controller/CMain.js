@@ -16,7 +16,7 @@ App.controller.define('CMain', {
 			"button#clickImport": {
 				click: "doImport"
 			},
-			"VNew button#select_OK": {
+			"TNewProject button#select_OK": {
 				click: "doNewProject"
 			}
 		});
