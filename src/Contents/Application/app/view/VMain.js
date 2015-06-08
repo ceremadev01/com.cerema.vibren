@@ -25,7 +25,7 @@ App.view.define('VMain', {
 						},
 						{
 							text: "Ouvrir",
-							itemId: "MNU_NEW"
+							itemId: "MNU_OPEN"
 						}
 					]
 				}
