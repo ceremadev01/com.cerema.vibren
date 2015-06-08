@@ -28,3 +28,12 @@
 	background-image:url(webapp/Preferences.png);
 }
 
+.wallpaper_rainbow
+{
+	background-image:url(webapp/rainbow.png);
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-size: auto auto;
+	width: 100%;
+	height: 100%;
+}
