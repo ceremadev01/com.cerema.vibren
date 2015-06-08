@@ -79,7 +79,8 @@ App.view.define('VMain', {
 						},
 						{
 							border: true,
-							flex: 1
+							flex: 1,
+							height: "100%"
 						}
 					]
 				}
