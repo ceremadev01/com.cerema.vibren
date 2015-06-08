@@ -5,7 +5,7 @@ Etudes = {
 	},
 	getAll: function(o,cb)
 	{
-		Etudes.using('db').query('vibren','select * from etudes',o,cb);
+		Etudes.using('db').query('vibren','select * from etudes',cb);
 	}
 };
 
