@@ -2,12 +2,10 @@ App.controller.define('CMain', {
 
 	views: [
 		"VMain",
-		"VImport"
+		"VImport",
+		"VNew"
 	],
-	
-	models: [
-	],
-	
+		
 	init: function()
 	{
 
@@ -42,6 +40,12 @@ App.controller.define('CMain', {
 	},
 	new_project: function()
 	{
+		App.view.create('VNew',{
+			modal: true
+		}).show();
+	},
+	open_project: function()
+	{
 		alert('x');
 	},
 	Menu_onClick: function(p)
@@ -50,6 +54,9 @@ App.controller.define('CMain', {
 			switch(p.itemId) {
 				case "MNU_NEW": 
 					this.new_project();
+					break;
+				case "MNU_OPEN": 
+					this.open_project();
 					break;
 				default:
 					return;
