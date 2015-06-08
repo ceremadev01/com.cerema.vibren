@@ -33,9 +33,9 @@ App.view.define('VMain', {
 		},
 		{
 			region: "center",			
-			split:false,
+			split:true,
 			itemId: "ClearWater",
-			hidden: true,
+			hidden: false,
 			bodyCls: "wallpaper_rainbow"
 		},
 		{
