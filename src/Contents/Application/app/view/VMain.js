@@ -67,7 +67,9 @@ App.view.define('VMain', {
 							height: "100%",
 							width: 350,
 							columns: [
-							
+								{
+									text: "sdffdfjkl"
+								}
 							],
 							store: App.store.create({
 								fields: [],
