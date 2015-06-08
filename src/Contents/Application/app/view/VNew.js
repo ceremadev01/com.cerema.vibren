@@ -5,9 +5,21 @@ App.view.define('VNew',{
 		this.width = 600;
         this.height = 250;
         this.title = "Nouveau projet";
-        this.bodyCls = "white";
+        this.bodyStyle = "background-color: white";
 		this.layout="vbox";
         this.items = [
+		{
+			xtype: "textfield",
+			labelField: "Intitulé du projet",
+			fieldPosition: "top",
+			padding: 10
+		},
+		{
+			xtype: "textarea",
+			labelField: "Commentaires",
+			fieldPosition: "top",
+			padding: 10
+		}
 		];
 		this.callParent(arguments);
 	}
