@@ -3,7 +3,8 @@ App.controller.define('CMain', {
 	views: [
 		"VMain",
 		"VImport",
-		"VNew"
+		"VNew",
+		"VOpen"
 	],
 		
 	init: function()
@@ -60,7 +61,9 @@ App.controller.define('CMain', {
 	},
 	open_project: function()
 	{
-		alert('x');
+		App.view.create('VOpen',{
+			modal: true
+		}).show();
 	},
 	Menu_onClick: function(p)
 	{
