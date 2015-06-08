@@ -27,8 +27,8 @@ App.controller.define('CMain', {
 	doNewProject: function()
 	{
 		var o={
-			libelle: App.get('VNew textfield#text_title').getValue(),
-			description: App.get('VNew textfield#text_description').getValue()
+			libelle: App.get('TNewProject textfield#text_title').getValue(),
+			description: App.get('TNewProject textfield#text_description').getValue()
 		};
 		console.log(o);
 		App.Etudes.nouveau(o,function() {
