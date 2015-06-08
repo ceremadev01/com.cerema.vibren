@@ -69,7 +69,8 @@ App.view.define('VMain', {
 							width: 350,
 							columns: [
 								{
-									text: "Acquisitions"
+									text: "Acquisitions",
+									flex: 1
 								}
 							],
 							store: App.store.create({
