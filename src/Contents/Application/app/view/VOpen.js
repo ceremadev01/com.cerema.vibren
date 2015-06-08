@@ -4,7 +4,7 @@ App.view.define('VOpen',{
 	initComponent: function() {
 		this.width = 600;
         this.height = 250;
-        this.title = "Mes études";
+        this.title = "Mes Ã©tudes";
         this.bodyStyle = "background-color: white";
 		this.layout="vbox";
         this.items = [
