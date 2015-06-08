@@ -59,7 +59,8 @@ App.view.define('VMain', {
 				{
 					layout: "hbox",
 					width: "100%",
-					border: false,
+					flex: 1,
+					border: true,
 					items: [
 						{
 							xtype: "grid",
