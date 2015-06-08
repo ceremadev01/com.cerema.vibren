@@ -44,10 +44,8 @@ App.controller.define('CMain', {
 	{
 		if (p.itemId) {
 			switch(p.itemId) {
-				case "MNU_IMPORT":
-					App.view.create("VImport",{
-						modal: false
-					}).show();
+				case "MNU_NEW": 
+					this.new_project();
 					break;
 				default:
 					return;
