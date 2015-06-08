@@ -22,10 +22,7 @@ App.view.define('VOpen',{
 			columns: [
 			
 			],
-			store: App.store.create({
-				fields: [],
-				data: []
-			})
+			store: App.store.create("App.Etudes.getAll")
 		}		
 		];
 		this.callParent(arguments);
