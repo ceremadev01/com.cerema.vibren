@@ -4,7 +4,7 @@ App.view.define('VNew',{
 	initComponent: function() {
 		this.width = 600;
         this.height = 250;
-        this.title = "Nouveau projet";
+        this.title = "Nouvelle étude";
         this.bodyStyle = "background-color: white";
 		this.layout="vbox";
         this.items = [
