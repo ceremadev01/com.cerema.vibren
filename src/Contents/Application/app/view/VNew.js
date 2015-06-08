@@ -12,6 +12,7 @@ App.view.define('VNew',{
 			xtype: "textfield",
 			fieldLabel: "Intitulé du projet",
 			labelAlign: "top",
+			width: "100%",
 			fieldPosition: "top",
 			padding: 10
 		},
@@ -19,9 +20,27 @@ App.view.define('VNew',{
 			xtype: "textarea",
 			fieldLabel: "Commentaires",
 			labelAlign: "top",
+			width: "100%",
 			fieldPosition: "top",
 			padding: 10
-		}
+		},
+		{
+			layout: "hbox",
+			border: false,
+			width: "100%",
+			items: [
+				{
+					flex: 1
+				},
+				{
+					xtype: "button",
+					width: 150,
+					text: "Enregistrer",
+					itemId: "select_OK"
+				}
+			],
+			padding: 10
+		}		
 		];
 		this.callParent(arguments);
 	}
