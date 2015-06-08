@@ -52,8 +52,8 @@ App.view.define('VMain', {
 				},
 				{
 					padding: 10,
-					fieldLabel: "Etude",
-					xtype: "textfield",
+					fieldLabel: "Description",
+					xtype: "textarea",
 					width: "100%"
 				},
 				{
