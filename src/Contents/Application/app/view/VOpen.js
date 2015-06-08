@@ -20,7 +20,14 @@ App.view.define('VOpen',{
 				}
 			],
 			columns: [
-			
+				{
+					text: "Etude",
+					dataIndex: "libelle"
+				},
+				{
+					text: "Description",
+					dataIndex: "description"
+				}
 			],
 			store: App.store.create("App.Etudes.getAll")
 		}		
