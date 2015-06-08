@@ -19,11 +19,18 @@ App.controller.define('CMain', {
 			},
 			"TNewProject button#select_OK": {
 				click: "doNewProject"
+			},
+			"TOpenProject grid#gridprj": {
+				itemdblclick: "doOpenProject"
 			}
 		});
 		
 		App.init('VMain',this.onLoad);
 		
+	},
+	doOpenProject: function()
+	{
+	
 	},
 	doNewProject: function()
 	{
