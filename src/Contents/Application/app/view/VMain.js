@@ -61,6 +61,7 @@ App.view.define('VMain', {
 					width: "100%",
 					flex: 1,
 					border: false,
+					padding: 10,
 					items: [
 						{
 							xtype: "grid",
