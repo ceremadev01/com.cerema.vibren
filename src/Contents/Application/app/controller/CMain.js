@@ -26,7 +26,6 @@ App.controller.define('CMain', {
 	},
 	doNewProject: function()
 	{
-		alert('z');
 		App.Etudes.nouveau({
 			libelle: App.get('VNew textfield#text_title').getValue(),
 			description: App.get('VNew textfield#text_description').getValue()
