@@ -34,9 +34,46 @@ App.view.define('VMain', {
 		{
 			region: "center",			
 			split:true,
-			bodyCls: "wallpaper_rainbow",
+			itemId: "ClearWater",
+			hidden: true,
+			bodyCls: "wallpaper_rainbow"
+		},
+		{
+			region: "center",			
+			split:true,
+			bodyStyle: "background-color: white",
+			layout: "vbox",
 			items: [
-				
+				{
+					padding: 10,
+					fieldLabel: "Etude",
+					xtype: "textfield",
+					width: "100%"
+				},
+				{
+					padding: 10,
+					fieldLabel: "Etude",
+					xtype: "textfield",
+					width: "100%"
+				},
+				{
+					layout: "hbox",
+					width: "100%",
+					border: false,
+					items: [
+						{
+							xtype: "grid",
+							height: "100%",
+							columns: [
+							
+							],
+							store: App.store.create({
+								fields: [],
+								data: []
+							})
+						}
+					]
+				}
 			]
 		}
 	]
