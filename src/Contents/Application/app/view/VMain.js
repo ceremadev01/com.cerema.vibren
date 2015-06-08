@@ -30,6 +30,7 @@ App.view.define('VMain', {
 		{
 			region: "center",			
 			split:true,
+			bodyCls: "wallpaper_rainbow",
 			items: [
 				
 			]
