@@ -60,6 +60,7 @@
         "temptation"
     ],
     "api": [
+        "Etudes",
         "Files"
     ],
     "tasks": [
