@@ -15,11 +15,18 @@ App.controller.define('CMain', {
 			},
 			"button#clickImport": {
 				click: "doImport"
+			},
+			"VNew button#select_OK": {
+				click: "doNewProject"
 			}
 		});
 		
 		App.init('VMain',this.onLoad);
 		
+	},
+	doNewProject: function()
+	{
+	
 	},
 	doJobs: function(JOBS,id,cb)
 	{
