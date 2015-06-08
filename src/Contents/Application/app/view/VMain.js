@@ -17,11 +17,15 @@ App.view.define('VMain', {
 			itemId: "MenuPanel",
 			menu: [
 				{
-					text: "Fichier",					
+					text: "Projets",					
 					menu: [
 						{
-							text: "Importer",
-							itemId: "MNU_IMPORT"
+							text: "Nouveau",
+							itemId: "MNU_NEW"
+						},
+						{
+							text: "Ouvrir",
+							itemId: "MNU_NEW"
 						}
 					]
 				}
