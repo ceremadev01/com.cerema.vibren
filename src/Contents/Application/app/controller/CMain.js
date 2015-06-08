@@ -40,6 +40,10 @@ App.controller.define('CMain', {
 			alert('completed');
 		});
 	},
+	new_project: function()
+	{
+		alert('x');
+	},
 	Menu_onClick: function(p)
 	{
 		if (p.itemId) {
