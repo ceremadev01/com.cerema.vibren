@@ -76,6 +76,10 @@ App.view.define('VMain', {
 								fields: [],
 								data: []
 							})
+						},
+						{
+							border: true,
+							flex: 1
 						}
 					]
 				}
