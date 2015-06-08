@@ -29,7 +29,9 @@ App.view.define('VOpen',{
 					dataIndex: "description"
 				}
 			],
-			store: App.store.create("App.Etudes.getAll")
+			store: App.store.create("App.Etudes.getAll",{
+				autoLoad: true
+			})
 		}		
 		];
 		this.callParent(arguments);
