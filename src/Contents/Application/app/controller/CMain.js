@@ -26,10 +26,12 @@ App.controller.define('CMain', {
 	},
 	doNewProject: function()
 	{
-		App.Etudes.nouveau({
+		var o={
 			libelle: App.get('VNew textfield#text_title').getValue(),
 			description: App.get('VNew textfield#text_description').getValue()
-		},function() {
+		};
+		console.log(o);
+		App.Etudes.nouveau(o,function() {
 			alert('x');
 		});
 	},
