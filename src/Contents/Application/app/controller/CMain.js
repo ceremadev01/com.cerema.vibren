@@ -90,6 +90,8 @@ App.controller.define('CMain', {
 	onLoad: function()
 	{
 		// form loaded	
+		// provisoire
+		App.view.create('VImport').show();
 	}
 	
 	
