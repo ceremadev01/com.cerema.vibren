@@ -21,7 +21,7 @@ Files={
 				var fileext=o.docId.substr(o.docId.lastIndexOf('.')+1,3).toLowerCase();
 				var Document=o.docId;
 				App.upload.reader(o.docId, function(err,buffer) {
-					
+					console.log(err);
 					var response=Format[fileext].parse(buffer);
 					// cleaning up the strings
 					for (var item in response) {
