@@ -1,6 +1,6 @@
 App = {
 	init: function(app,server) {
-		app.post('/',function(req,res) {
+		app.post('/',app.UPLOAD.any(),function(req,res,next) {
 			App.upload.up(req,res);
 		});
 	}
