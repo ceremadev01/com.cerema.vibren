@@ -20,6 +20,7 @@ Files={
 				// try to identify the file based on extension
 				var fileext=o.docId.substr(o.docId.lastIndexOf('.')+1,3).toLowerCase();
 				var Document=o.docId;
+                console.log(o.docId);
 				App.upload.reader(o.docId, function(err,buffer) {
 					console.log(err);
 					var response=Format[fileext].parse(buffer);
