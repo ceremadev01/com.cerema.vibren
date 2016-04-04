@@ -40,7 +40,7 @@ App.controller.define('CMain', {
 		};
 		console.log(o);
 		App.Etudes.nouveau(o,function() {
-			alert('x');
+            App.get('mainform panel#mainScreen').show();
 		});
 	},
 	doJobs: function(JOBS,id,cb)
