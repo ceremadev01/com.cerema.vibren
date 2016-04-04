@@ -32,7 +32,7 @@ App.controller.define('CMain', {
 	{
 	
 	},
-	doNewProject: function()
+	doNewProject: function(me)
 	{
 		var o={
 			libelle: App.get('TNewProject textfield#text_title').getValue(),
@@ -41,6 +41,7 @@ App.controller.define('CMain', {
 		console.log(o);
 		App.Etudes.nouveau(o,function() {
             App.get('mainform panel#mainScreen').show();
+            me.up('window').close();
 		});
 	},
 	doJobs: function(JOBS,id,cb)
