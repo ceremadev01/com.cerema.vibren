@@ -49,12 +49,14 @@ App.view.define('VMain', {
 				{
 					padding: 10,
 					fieldLabel: "Etude",
+                    itemId: "etude",
 					xtype: "textfield",
 					width: "100%"
 				},
 				{
 					padding: 10,
 					fieldLabel: "Description",
+                    itemId: "description",
 					xtype: "textarea",
 					width: "100%"
 				},
