@@ -35,8 +35,7 @@ App.controller.define('CMain', {
 		
 	},
     grid_click: function(me,store,ndx) {
-        alert(ndx);
-        console.log(store);
+        alert(store.data.id);
     },
     doOpenImport: function()
     {
