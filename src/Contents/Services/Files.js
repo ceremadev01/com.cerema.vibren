@@ -70,6 +70,7 @@ Files={
 								}
 							}).then(function(file) {
 								var ff=file.dataValues.id;
+                                console.log(ff);
 								vibren.Acquisition.find({where: { id: ff } }).then(function(acq) {
                                     console.log(acq);
 									response.fileId=o.dataValues.id;
