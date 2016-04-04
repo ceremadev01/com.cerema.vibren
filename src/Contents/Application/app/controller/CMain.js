@@ -63,7 +63,8 @@ App.controller.define('CMain', {
 	{
 		var JOBS=App.get('TImport uploadfilemanager#up').getFiles();
 		this.doJobs(JOBS,0,function() {
-			alert('completed');
+			App.notify("L'importation s'est terminée sans erreur.");
+            App.get("TImport").close();            
 		});
 	},
 	new_project: function()
