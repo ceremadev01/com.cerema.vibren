@@ -38,6 +38,7 @@ App.controller.define('CMain', {
         App.ID=store.data.id;
         App.get('mainform textarea#description').setValue(store.data.description);
         App.get('mainform textfield#etude').setValue(store.data.libelle);     
+        App.get('mainform panel#mainScreen').show();
         me.up('window').close();
     },
     doOpenImport: function()
