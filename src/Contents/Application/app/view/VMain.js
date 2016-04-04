@@ -72,7 +72,7 @@ App.view.define('VMain', {
                             tbar: [
                             {
                                 text: "Importer",
-                                iconCls: ""
+                                iconCls: "import"
                             }
                             ],
 							columns: [
