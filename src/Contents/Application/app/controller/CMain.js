@@ -91,7 +91,7 @@ App.controller.define('CMain', {
 	{
 		// form loaded	
 		// provisoire
-		App.view.create('VImport').show();
+		//App.view.create('VImport').show();
 	}
 	
 	
