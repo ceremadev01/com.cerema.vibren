@@ -25,12 +25,19 @@ App.controller.define('CMain', {
 			},
             "mainform button#import": {
                 click: "doOpenImport"
+            },
+            "TOpenProject grid": {
+                itemdblclick: "grid_click"
             }
 		});
 		
 		App.init('VMain',this.onLoad);
 		
 	},
+    grid_click: function(me,store,ndx) {
+        alert(ndx);
+        console.log(store);
+    },
     doOpenImport: function()
     {
         App.view.create('VImport').show();
