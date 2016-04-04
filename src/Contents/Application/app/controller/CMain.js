@@ -22,12 +22,19 @@ App.controller.define('CMain', {
 			},
 			"TOpenProject grid#gridprj": {
 				itemdblclick: "doOpenProject"
-			}
+			},
+            "mainform button#import": {
+                click: "doOpenImport"
+            }
 		});
 		
 		App.init('VMain',this.onLoad);
 		
 	},
+    doOpenImport: function()
+    {
+        App.view.create('VImport').show();
+    },
 	doOpenProject: function()
 	{
 	
@@ -55,9 +62,6 @@ App.controller.define('CMain', {
 	doImport: function()
 	{
 		var JOBS=App.get('TImport uploadfilemanager#up').getFiles();
-		App.view.create("VProgress",{
-		
-		}).show();
 		this.doJobs(JOBS,0,function() {
 			alert('completed');
 		});
@@ -91,9 +95,6 @@ App.controller.define('CMain', {
 	},
 	onLoad: function()
 	{
-		// form loaded	
-		// provisoire
-		//App.view.create('VImport').show();
 	}
 	
 	
