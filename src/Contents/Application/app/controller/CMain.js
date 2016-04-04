@@ -37,7 +37,8 @@ App.controller.define('CMain', {
     grid_click: function(me,store,ndx) {
         App.ID=store.data.id;
         App.get('mainform textarea#description').setValue(store.data.description);
-        App.get('mainform textfield#etude').setValue(store.data.libelle);        
+        App.get('mainform textfield#etude').setValue(store.data.libelle);     
+        me.up('window').close();
     },
     doOpenImport: function()
     {
