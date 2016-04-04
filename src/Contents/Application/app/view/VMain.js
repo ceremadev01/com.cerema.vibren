@@ -69,6 +69,12 @@ App.view.define('VMain', {
 							xtype: "grid",
 							height: "100%",
 							width: 350,
+                            tbar: [
+                            {
+                                text: "Importer",
+                                iconCls: ""
+                            }
+                            ],
 							columns: [
 								{
 									text: "Acquisitions",
