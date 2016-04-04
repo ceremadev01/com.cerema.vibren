@@ -38,9 +38,10 @@ App.controller.define('CMain', {
 			libelle: App.get('TNewProject textfield#text_title').getValue(),
 			description: App.get('TNewProject textfield#text_description').getValue()
 		};
-		console.log(o);
 		App.Etudes.nouveau(o,function() {
             App.get('mainform panel#mainScreen').show();
+            App.get('mainform textarea#description').setValue(App.get('TNewProject textfield#text_description').getValue());
+            App.get('mainform textfield#libelle').setValue(App.get('TNewProject textfield#text_title').getValue());
             me.up('window').close();
 		});
 	},
