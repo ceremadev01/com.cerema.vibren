@@ -42,6 +42,7 @@ App.view.define('VMain', {
 			region: "center",			
 			split:true,
 			hidden: false,
+            itemId: "mainScreen",
 			bodyStyle: "background-color: white",
 			layout: "vbox",
 			items: [
