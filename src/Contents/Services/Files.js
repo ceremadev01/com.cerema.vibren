@@ -62,6 +62,7 @@ Files={
 							fileid: App.upload.getFileID(o.docId)
 						}).then(function(o) {							
 							// looking for ACQ
+                            console.log(checkACQ+'%');
 							vibren.Files.find({
 								where: {
 									filename: {
