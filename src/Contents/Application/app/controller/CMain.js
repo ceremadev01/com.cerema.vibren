@@ -73,7 +73,14 @@ App.controller.define('CMain', {
 	{
 		var JOBS=App.get('TImport uploadfilemanager#up').getFiles();
 		console.log(JOBS);
-		this.doJobs(JOBS,0,function() {
+		var myJOBS=[];
+		for (var i=0;i<JOBS.length;i++) {
+			if (JOBS[i].filename.indexOf('.ACQ')>-1) myJOBS.push(JOBS[i]);	
+		};
+		for (var i=0;i<JOBS.length;i++) {
+			if (JOBS[i].filename.indexOf('.SIG')>-1) myJOBS.push(JOBS[i]);	
+		};
+		this.doJobs(myJOBS,0,function() {
 			App.notify("L'importation s'est terminée sans erreur.");
             App.get("TImport").close();            
 		});
