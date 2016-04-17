@@ -72,6 +72,7 @@ App.controller.define('CMain', {
 	doImport: function()
 	{
 		var JOBS=App.get('TImport uploadfilemanager#up').getFiles();
+		console.log(JOBS);
 		this.doJobs(JOBS,0,function() {
 			App.notify("L'importation s'est terminée sans erreur.");
             App.get("TImport").close();            
