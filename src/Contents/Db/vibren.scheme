@@ -13,7 +13,7 @@ etudes
 acquisition
 {
 	- (int) presence_acquisition
-	- (Files) file
+	- (files) file
 	- (string) label_acquisition			
 	- (int) numero_acquisition
 	- (string) commentaire_acquisition
@@ -109,14 +109,14 @@ acquisition
 
 etudes_listes
 {
-	- (Etudes) etude
-	- (Acquisition) acquisition
+	- (etudes) etude
+	- (acquisition) acquisition
 }
 
 signal
 {
-	- (Files) file
-	- (Acquisition) acquisition
+	- (files) file
+	- (acquisition) acquisition
 	- (int) presence_signal
 	- (int) numero_fichier
 	- (string) commentaire_traitement
@@ -152,8 +152,8 @@ signal
 
 mesures 
 {
-	- (Acquisition) acquisition
-	- (Signal) signal
+	- (acquisition) acquisition
+	- (signal) signal
 	- (int) voie
 	- (text) points
 }
