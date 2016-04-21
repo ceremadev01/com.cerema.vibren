@@ -1,16 +1,16 @@
-Files
+files
 {
 	- (string) fileid
 	- (string) filename
 }
 
-Etudes
+etudes
 {
 	- (string) libelle
 	- (string) description
 }
 
-Acquisition
+acquisition
 {
 	- (int) presence_acquisition
 	- (Files) file
@@ -107,13 +107,13 @@ Acquisition
 	- (int) source_visu
 }
 
-Etudes_listes
+etudes_listes
 {
 	- (Etudes) etude
 	- (Acquisition) acquisition
 }
 
-Signal
+signal
 {
 	- (Files) file
 	- (Acquisition) acquisition
@@ -150,7 +150,7 @@ Signal
 	- (string) unite_y4	
 }
 
-Mesures 
+mesures 
 {
 	- (Acquisition) acquisition
 	- (Signal) signal
