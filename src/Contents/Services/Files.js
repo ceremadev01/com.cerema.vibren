@@ -3,8 +3,8 @@ Files={
 		// get checksum of the file
 		var msg="";
 		// ORM database vibren
-		var vibren=Files.using('db').using('vibren');		
-		vibren.Files.find({where: {fileid: App.upload.getFileID(o.docId)}}).then(function(file) {
+		var vibren=Files.using('db').using('vibren');	
+		vibren.files.find({where: {fileid: App.upload.getFileID(o.docId)}}).then(function(file) {
 			if (file) {
 				msg={
 					msg: "ALREADY_IMPORTED"
@@ -12,7 +12,7 @@ Files={
 				cb(msg,null);
 				return;			
 			} else {
-				// get file formats				
+				// get file formats			
 				var Format={
 					acq: Files.using('Formats/acq'),
 					sig: Files.using('Formats/sig')
@@ -41,13 +41,13 @@ Files={
 							filename: o.filename,
 							fileid: App.upload.getFileID(o.docId)
 						});
-						vibren.Files.create({
+						vibren.files.create({
 							filename: o.filename,
 							fileid: App.upload.getFileID(o.docId)
 						}).then(function(o) {		
 							response.fileId=o.dataValues.id;
 							console.log(response);
-							vibren.Acquisition.create(response).then(function (acq) {
+							vibren.acquisition.create(response).then(function (acq) {
 								cb();
 							});					
 						});
@@ -57,13 +57,13 @@ Files={
 					// Format SIG
 					if (fileext=="sig") {
 						var checkACQ=o.filename.substr(0,o.filename.lastIndexOf('.')-1).split('_')[0];
-						vibren.Files.create({
+						vibren.files.create({
 							filename: o.filename,
 							fileid: App.upload.getFileID(o.docId)
 						}).then(function(o) {							
 							// looking for ACQ
                             console.log(checkACQ+'%');
-							vibren.Files.find({
+							vibren.files.find({
 								where: {
 									filename: {
 										like: checkACQ+'%'
@@ -73,11 +73,11 @@ Files={
                                 console.log(file.dataValues);
 								var ff=file.dataValues.id;
                                 console.log(ff);
-								vibren.Acquisition.find({where: { fileid: ff } }).then(function(acq) {
+								vibren.acquisition.find({where: { fileid: ff } }).then(function(acq) {
                                     console.log(acq);
 									response.fileId=o.dataValues.id;
 									response.acquisitionId=acq.id;
-									vibren.Signal.create(response).then(function (Signal) {
+									vibren.signal.create(response).then(function (Signal) {
 										// adding task calculate_mesures
 										/*App.tasks.add("calculate_mesures",{
 											docId: Document, 
@@ -168,7 +168,7 @@ Files={
 												});
 											//};
 										};
-										vibren.Mesures.bulkCreate(dta).catch(function(err) {
+										vibren.mesures.bulkCreate(dta).catch(function(err) {
 											console.log(err);
 										}).then(function(success) {
 											cb();
